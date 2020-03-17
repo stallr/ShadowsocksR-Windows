@@ -18,7 +18,7 @@ jobs:
       uses: warrenbuckley/Setup-Nuget@v1
 
     - name: Setup NuGet Private Sources
-      run: nuget sources add -Name "GitHub-HMBSbige" -Source "https://nuget.pkg.github.com/HMBSbige/index.json" -UserName HMBSbige -Password "${{ secrets.NUGET_TOKEN }}"
+      run: nuget sources add -Name "GitHub-HMBSbige" -Source "https://nuget.pkg.github.com/HMBSbige/index.json" -UserName -Password 
       shell: cmd
 
     - name: Setup MSBuild.exe
